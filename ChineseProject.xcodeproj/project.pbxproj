@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		716D487323FF129F00471D59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716D487223FF129F00471D59 /* AppDelegate.swift */; };
 		716D487523FF129F00471D59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716D487423FF129F00471D59 /* SceneDelegate.swift */; };
-		716D487723FF129F00471D59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716D487623FF129F00471D59 /* ViewController.swift */; };
+		716D487723FF129F00471D59 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716D487623FF129F00471D59 /* InicioViewController.swift */; };
 		716D487A23FF129F00471D59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716D487823FF129F00471D59 /* Main.storyboard */; };
 		716D487C23FF129F00471D59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716D487B23FF129F00471D59 /* Assets.xcassets */; };
 		716D487F23FF129F00471D59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716D487D23FF129F00471D59 /* LaunchScreen.storyboard */; };
+		716D488723FF145300471D59 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716D488623FF145300471D59 /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		716D486F23FF129F00471D59 /* ChineseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChineseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		716D487223FF129F00471D59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		716D487423FF129F00471D59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		716D487623FF129F00471D59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		716D487623FF129F00471D59 /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
 		716D487923FF129F00471D59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		716D487B23FF129F00471D59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		716D487E23FF129F00471D59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		716D488023FF129F00471D59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		716D488623FF145300471D59 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				716D487223FF129F00471D59 /* AppDelegate.swift */,
 				716D487423FF129F00471D59 /* SceneDelegate.swift */,
-				716D487623FF129F00471D59 /* ViewController.swift */,
+				716D487623FF129F00471D59 /* InicioViewController.swift */,
+				716D488623FF145300471D59 /* DatePickerViewController.swift */,
 				716D487823FF129F00471D59 /* Main.storyboard */,
 				716D487B23FF129F00471D59 /* Assets.xcassets */,
 				716D487D23FF129F00471D59 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				716D487723FF129F00471D59 /* ViewController.swift in Sources */,
+				716D488723FF145300471D59 /* DatePickerViewController.swift in Sources */,
+				716D487723FF129F00471D59 /* InicioViewController.swift in Sources */,
 				716D487323FF129F00471D59 /* AppDelegate.swift in Sources */,
 				716D487523FF129F00471D59 /* SceneDelegate.swift in Sources */,
 			);

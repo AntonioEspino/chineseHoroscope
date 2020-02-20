@@ -1,24 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hCR-Nr-MEw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Chinese horoscope-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="InicioViewController" customModule="ChineseProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UIB-5P-eBO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9HN-Su-FxS">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SfY-qK-stx" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="806"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="127" translatesAutoresizingMaskIntoConstraints="NO" id="Qyb-jA-aOe">
+                                                <rect key="frame" x="24" y="24" width="366" height="758"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ulj-CH-rRN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1B-Lg-BWp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="50"/>
+                                                                <state key="normal" title="rat" image="rat"/>
+                                                            </button>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnj-rm-on6">
+                                                                <rect key="frame" x="122" y="0.0" width="122" height="50"/>
+                                                                <state key="normal" title="ox" image="ox"/>
+                                                            </button>
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrs-Yp-qQf">
+                                                                <rect key="frame" x="244" y="0.0" width="122" height="50"/>
+                                                                <state key="normal" title="tiger" image="tiger"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ws7-2K-Nur">
+                                                        <rect key="frame" x="0.0" y="177" width="366" height="50"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fez-NF-VSW">
+                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="50"/>
+                                                                <state key="normal" title="rabbit" image="rabbit"/>
+                                                            </button>
+                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jR-Hf-bcY">
+                                                                <rect key="frame" x="122" y="0.0" width="122" height="50"/>
+                                                                <state key="normal" title="dragon" image="dragon"/>
+                                                            </button>
+                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dp-W4-nm7">
+                                                                <rect key="frame" x="244" y="0.0" width="122" height="50"/>
+                                                                <state key="normal" title="snake" image="snake"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fcy-gz-tyM">
+                                                        <rect key="frame" x="0.0" y="354" width="366" height="50"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOd-tk-r7d">
+                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="50"/>
+                                                                <state key="normal" title="horse" image="horse"/>
+                                                            </button>
+                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4g-5j-Yjf">
+                                                                <rect key="frame" x="122" y="0.0" width="122" height="50"/>
+                                                                <state key="normal" title="goat" image="goat"/>
+                                                            </button>
+                                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lff-Hz-DB2">
+                                                                <rect key="frame" x="244" y="0.0" width="122" height="50"/>
+                                                                <state key="normal" title="monkey" image="monkey"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ktt-uO-982">
+                                                        <rect key="frame" x="0.0" y="531" width="366" height="50"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G83-cN-L0Q">
+                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="50"/>
+                                                                <state key="normal" title="rooster" image="rooster"/>
+                                                            </button>
+                                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9b7-Vp-WBc">
+                                                                <rect key="frame" x="122" y="0.0" width="122" height="50"/>
+                                                                <state key="normal" title="dog" image="dog"/>
+                                                            </button>
+                                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4P-UD-5MR">
+                                                                <rect key="frame" x="244" y="0.0" width="122" height="50"/>
+                                                                <state key="normal" title="swine" image="swine"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crt-ls-Uc4">
+                                                        <rect key="frame" x="0.0" y="708" width="366" height="50"/>
+                                                        <state key="normal" title="Discover your sign here"/>
+                                                        <connections>
+                                                            <action selector="didTapInDiscoverYourSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="haQ-yd-pZk"/>
+                                                            <segue destination="jmF-fr-Ulu" kind="presentation" identifier="toDatePicker" id="LLB-75-qwk"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Qyb-jA-aOe" firstAttribute="top" secondItem="SfY-qK-stx" secondAttribute="top" constant="24" id="K5s-7P-jqT"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qyb-jA-aOe" secondAttribute="trailing" constant="24" id="Q7u-4n-5g9"/>
+                                            <constraint firstAttribute="bottom" secondItem="Qyb-jA-aOe" secondAttribute="bottom" constant="24" id="crc-8X-fER"/>
+                                            <constraint firstItem="Qyb-jA-aOe" firstAttribute="leading" secondItem="SfY-qK-stx" secondAttribute="leading" constant="24" id="woc-y3-HBh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SfY-qK-stx" firstAttribute="trailing" secondItem="4Pt-yH-XrG" secondAttribute="trailing" id="Mwu-Aq-zLu"/>
+                                    <constraint firstItem="SfY-qK-stx" firstAttribute="top" secondItem="4Pt-yH-XrG" secondAttribute="top" id="W0b-vG-WkX"/>
+                                    <constraint firstItem="SfY-qK-stx" firstAttribute="leading" secondItem="4Pt-yH-XrG" secondAttribute="leading" id="ZaB-oG-R6G"/>
+                                    <constraint firstItem="SfY-qK-stx" firstAttribute="width" secondItem="wr5-m2-QjP" secondAttribute="width" id="fl6-zp-wb8"/>
+                                    <constraint firstItem="SfY-qK-stx" firstAttribute="bottom" secondItem="4Pt-yH-XrG" secondAttribute="bottom" id="nGc-XS-rYx"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="4Pt-yH-XrG"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="wr5-m2-QjP"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9HN-Su-FxS" firstAttribute="leading" secondItem="zGh-xG-Pbd" secondAttribute="leading" id="c3o-1R-xsO"/>
+                            <constraint firstItem="zGh-xG-Pbd" firstAttribute="bottom" secondItem="9HN-Su-FxS" secondAttribute="bottom" id="eQe-CQ-HQ2"/>
+                            <constraint firstItem="zGh-xG-Pbd" firstAttribute="trailing" secondItem="9HN-Su-FxS" secondAttribute="trailing" id="nXN-LA-tTz"/>
+                            <constraint firstItem="9HN-Su-FxS" firstAttribute="top" secondItem="zGh-xG-Pbd" secondAttribute="top" id="yzk-kq-tMj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zGh-xG-Pbd"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Chinese horoscope" id="pmB-Yv-s7G"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iIT-kp-TLa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hCR-Nr-MEw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DKU-ZV-bYz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Jq2-ZM-eUL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6V-pg-6VU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--Date Picker View Controller-->
+        <scene sceneID="mt6-b1-dKL">
+            <objects>
+                <viewController id="jmF-fr-Ulu" customClass="DatePickerViewController" customModule="ChineseProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QYH-p5-teL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="mhl-IU-j9Q">
+                                <rect key="frame" x="47" y="313" width="320" height="216"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="939-na-7uA">
+                                <rect key="frame" x="353" y="20" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <segue destination="63m-Fv-Tfd" kind="unwind" unwindAction="unwindToIntroductionWithUnwindSegue:" id="MRi-hV-Sb8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mhl-IU-j9Q" firstAttribute="centerY" secondItem="QYH-p5-teL" secondAttribute="centerY" id="4ec-E7-mH0"/>
+                            <constraint firstItem="mhl-IU-j9Q" firstAttribute="centerX" secondItem="QYH-p5-teL" secondAttribute="centerX" id="bvl-Ba-rs7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fa1-Nf-ldH"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="mhl-IU-j9Q" id="Zud-vf-j2l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bB6-3c-RDt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="63m-Fv-Tfd" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1716" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dog" width="50" height="50"/>
+        <image name="dragon" width="50" height="50"/>
+        <image name="goat" width="50" height="50"/>
+        <image name="horse" width="50" height="50"/>
+        <image name="monkey" width="50" height="50"/>
+        <image name="ox" width="50" height="50"/>
+        <image name="rabbit" width="50" height="50"/>
+        <image name="rat" width="50" height="50"/>
+        <image name="rooster" width="50" height="50"/>
+        <image name="snake" width="50" height="50"/>
+        <image name="swine" width="50" height="50"/>
+        <image name="tiger" width="50" height="50"/>
+    </resources>
 </document>
