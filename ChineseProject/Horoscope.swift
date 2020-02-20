@@ -1,10 +1,11 @@
 //
-//  structHoroscopo.swift
-//  chineseCalendar
+//  Horoscope.swift
+//  ChineseProject
 //
 //  Created by user164220 on 20/02/2020.
 //  Copyright © 2020 Antonio Espino. All rights reserved.
 //
+
 
 import Foundation
 

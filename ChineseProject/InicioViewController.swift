@@ -34,7 +34,7 @@ class InicioViewController: UIViewController{
 extension InicioViewController: DatePickerDelegate {
     func datePickerValue(date: Date) {
         datePicker = date
-        performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
+        //performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
     }
 }
 
