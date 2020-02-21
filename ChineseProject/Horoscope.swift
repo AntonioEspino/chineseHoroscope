@@ -10,9 +10,7 @@
 import Foundation
 
 struct Horoscope {
-    var dateStart: Date
-    var dateEnd: Date
-    var animalSymbol: Symbol
+    var animalSymbol: Symbol?
     
     enum Symbol{
         case horse
@@ -118,17 +116,21 @@ struct Horoscope {
             }
         }
     }
-    init(dateStart: Date, dateEnd: Date, symbol: Symbol) {
-        self.dateStart = dateStart
-        self.dateEnd = dateEnd
+    
+    
+    
+    init(as symbol: Symbol?) {
         self.animalSymbol = symbol
     }
-    func typeForDate (date: Date) -> Symbol?{
+    
+    //MARK: - Functions SymbolLooking
+    
+    func typeForDate (_ date: Date) -> Symbol?{
         
         let dateAsString = date.description
         let dateSpliteinBlank = dateAsString.split(separator: " ")
         let dateSplited = dateSpliteinBlank[0].split(separator: "-")
-   
+        
         guard let year = Int(dateSplited[0]), let month = Int(dateSplited[1]), let day = Int(dateSplited[2]) else {return nil}
         
         switch year {
@@ -149,22 +151,22 @@ struct Horoscope {
             if day <= 22 && month <= 1 {return .monkey}
             else { return .rooster }
         case 1994:
-                if day <= 9 && month <= 2 {return .rooster}
+            if day <= 9 && month <= 2 {return .rooster}
             else { return .dog}
         case 1995:
-                if day <= 30 && month <= 1 {return .dog}
+            if day <= 30 && month <= 1 {return .dog}
             else {return .swine}
         case 1996:
-                if day <= 18 && month <= 2 {return .swine}
-                else { return .rat }
+            if day <= 18 && month <= 2 {return .swine}
+            else { return .rat }
         case 1997:
-                if day <= 7 && month <= 2 {return .rat}
-                else { return .ox }
+            if day <= 7 && month <= 2 {return .rat}
+            else { return .ox }
         case 1998:
-                if day <= 27 && month <= 1 {return .ox}
-                else { return .tiger }
+            if day <= 27 && month <= 1 {return .ox}
+            else { return .tiger }
         case 1999:
-                if day <= 15 && month <= 2 {return .tiger}
+            if day <= 15 && month <= 2 {return .tiger}
             else {return .rabbit }
         case 2000:
             if day <= 4 && month <= 2 {return .rabbit}
@@ -172,7 +174,7 @@ struct Horoscope {
         default:
             return calculeSymbol(year: year)
         }
-
+        
     }
     func calculeSymbol (year:Int) -> Symbol? {
         let tipo = year%12

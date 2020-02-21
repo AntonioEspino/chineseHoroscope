@@ -11,18 +11,26 @@ import UIKit
 import Foundation
 
 protocol DatePickerDelegate {
-    func datePickerValue (date: Date)
+    func datePickerValue (_ date: Date)
 }
 
 class DatePickerViewController: UIViewController  {
+    
+    //MARK: - Global var
+    
+    static let datePickerVCSegueIdentifier = "toDatePicker"
     var delegate: DatePickerDelegate?
     
+    //MARK: - Outlets
+    
     @IBOutlet var datePicker: UIDatePicker!
+    
+    //MARK: - Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }    
     override func viewWillDisappear(_ animated: Bool) {
-        delegate?.datePickerValue(date: datePicker.date)
+        delegate?.datePickerValue(datePicker.date)
     }
 }

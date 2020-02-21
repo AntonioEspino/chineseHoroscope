@@ -10,9 +10,12 @@ import UIKit
 
 class HoroscopeViewController: UIViewController {
     
-    static let horoscopeVCSegueIdentifier = "toHoroscope"
-    var horoscopereceived = Horoscope.init(dateStart: Date.init(), dateEnd: Date.init(), symbol: .tiger)
+    //MARK: - Global Var
     
+    static let horoscopeVCSegueIdentifier = "toHoroscope"
+    var horoscopereceived = Horoscope.init(as: nil)
+    
+    //MARK: - Outlets
     
     @IBOutlet weak var imageHoroscopeReceived: UIImageView!
     @IBOutlet var descriptionHoroscopeReceived: UILabel!
@@ -20,8 +23,10 @@ class HoroscopeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageHoroscopeReceived.image = UIImage(named: horoscopereceived.animalSymbol.asString)
-        descriptionHoroscopeReceived.text = horoscopereceived.animalSymbol.message
-        affinityHoroscopeReceived.text = horoscopereceived.animalSymbol.compatibility
+        if horoscopereceived.animalSymbol != nil{
+            imageHoroscopeReceived.image = UIImage(named: horoscopereceived.animalSymbol?.asString ?? "<no_name>")
+            descriptionHoroscopeReceived.text = horoscopereceived.animalSymbol?.message
+            affinityHoroscopeReceived.text = horoscopereceived.animalSymbol?.compatibility           
+        }
     }
 }
