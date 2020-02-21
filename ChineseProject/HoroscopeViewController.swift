@@ -10,6 +10,7 @@ import UIKit
 
 class HoroscopeViewController: UIViewController {
     
+    static let horoscopeVCSegueIdentifier = "toHoroscope"
     var horoscopereceived = Horoscope.init(dateStart: Date.init(), dateEnd: Date.init(), symbol: .tiger)
     
     @IBOutlet var imageHoroscopeReceived: UIView!
@@ -23,15 +24,15 @@ class HoroscopeViewController: UIViewController {
         affinityHoroscopeReceived.text = horoscopereceived.animalSymbol.compatibility
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

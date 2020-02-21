@@ -57,64 +57,64 @@ struct Horoscope {
                 return "(1938, 1950, 1962, 1974, 1986, 1998, 2010) Las personas de este signo son muy pasionales y llenas de energía. No pasan desapercibidas, son aventureros, independientes, ingeniosos, impulsivos y les gusta la diversión. Son amigos para toda la vida, aunque les gusta ser el líder del grupo. En el mundo de las relaciones de pareja se muestran el más fuerte, sexy y seductor, aunque de comportamiento excesivo."
             }
         }
+        
+        var compatibility: String {
             
-            var compatibility: String {
-                
-                switch self{
-                case .horse:
-                    return "caballo compatible con tigre y perro"
-                case .monkey:
-                    return "mono compatible con rata y dragón"
-                case .dragon:
-                    return "dragón compatible con rata y mono"
-                case .rat:
-                    return "rata compatible con dragón y mono"
-                case .ox:
-                    return "buey compatible con serpiente y gallo"
-                case .snake:
-                    return "serpiente compatible con gallo y buey"
-                case .rabbit:
-                    return "conejo compatible con cerdo y oveja"
-                case .dog:
-                    return "perro compatible con tigre y caballo"
-                case .rooster:
-                    return "gallo compatible con serpiente y buey"
-                case .swine:
-                    return "cerdo compatible con conejo y oveja"
-                case .goat:
-                    return "oveja compatible con cerdo y conejo"
-                case .tiger:
-                    return "tigre compatible con caballo y perro"
-                }
+            switch self{
+            case .horse:
+                return "caballo compatible con tigre y perro"
+            case .monkey:
+                return "mono compatible con rata y dragón"
+            case .dragon:
+                return "dragón compatible con rata y mono"
+            case .rat:
+                return "rata compatible con dragón y mono"
+            case .ox:
+                return "buey compatible con serpiente y gallo"
+            case .snake:
+                return "serpiente compatible con gallo y buey"
+            case .rabbit:
+                return "conejo compatible con cerdo y oveja"
+            case .dog:
+                return "perro compatible con tigre y caballo"
+            case .rooster:
+                return "gallo compatible con serpiente y buey"
+            case .swine:
+                return "cerdo compatible con conejo y oveja"
+            case .goat:
+                return "oveja compatible con cerdo y conejo"
+            case .tiger:
+                return "tigre compatible con caballo y perro"
+            }
             
         }
         var asString: String {
-                     
-                     switch self{
-                     case .horse:
-                         return "horse"
-                     case .monkey:
-                         return "monkey"
-                     case .dragon:
-                         return "dragon"
-                     case .rat:
-                         return "rat"
-                     case .ox:
-                         return "ox"
-                     case .snake:
-                         return "snake"
-                     case .rabbit:
-                         return "rabbit"
-                     case .dog:
-                         return "dog"
-                     case .rooster:
-                         return "rooster"
-                     case .swine:
-                         return "swine"
-                     case .goat:
-                         return "goat"
-                     case .tiger:
-                         return "tiger"
+            
+            switch self{
+            case .horse:
+                return "horse"
+            case .monkey:
+                return "monkey"
+            case .dragon:
+                return "dragon"
+            case .rat:
+                return "rat"
+            case .ox:
+                return "ox"
+            case .snake:
+                return "snake"
+            case .rabbit:
+                return "rabbit"
+            case .dog:
+                return "dog"
+            case .rooster:
+                return "rooster"
+            case .swine:
+                return "swine"
+            case .goat:
+                return "goat"
+            case .tiger:
+                return "tiger"
             }
         }
     }

@@ -30,14 +30,23 @@
                                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1B-Lg-BWp">
                                                                 <rect key="frame" x="0.0" y="0.0" width="122" height="50"/>
                                                                 <state key="normal" title="rat" image="rat"/>
+                                                                <connections>
+                                                                    <action selector="ratButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RRt-hS-sZ2"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnj-rm-on6">
                                                                 <rect key="frame" x="122" y="0.0" width="122" height="50"/>
                                                                 <state key="normal" title="ox" image="ox"/>
+                                                                <connections>
+                                                                    <action selector="oxButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bLn-CJ-V79"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrs-Yp-qQf">
                                                                 <rect key="frame" x="244" y="0.0" width="122" height="50"/>
                                                                 <state key="normal" title="tiger" image="tiger"/>
+                                                                <connections>
+                                                                    <action selector="tigerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="huP-Sq-0y0"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -47,14 +56,23 @@
                                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fez-NF-VSW">
                                                                 <rect key="frame" x="0.0" y="0.0" width="122" height="50"/>
                                                                 <state key="normal" title="rabbit" image="rabbit"/>
+                                                                <connections>
+                                                                    <action selector="rabbitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lsP-YU-n1f"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jR-Hf-bcY">
                                                                 <rect key="frame" x="122" y="0.0" width="122" height="50"/>
                                                                 <state key="normal" title="dragon" image="dragon"/>
+                                                                <connections>
+                                                                    <action selector="dragonButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sb8-uy-vbl"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dp-W4-nm7">
                                                                 <rect key="frame" x="244" y="0.0" width="122" height="50"/>
                                                                 <state key="normal" title="snake" image="snake"/>
+                                                                <connections>
+                                                                    <action selector="snakeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sCe-n9-ecK"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -64,14 +82,23 @@
                                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOd-tk-r7d">
                                                                 <rect key="frame" x="0.0" y="0.0" width="122" height="50"/>
                                                                 <state key="normal" title="horse" image="horse"/>
+                                                                <connections>
+                                                                    <action selector="hoseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TeC-QA-8lG"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4g-5j-Yjf">
                                                                 <rect key="frame" x="122" y="0.0" width="122" height="50"/>
                                                                 <state key="normal" title="goat" image="goat"/>
+                                                                <connections>
+                                                                    <action selector="goatButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pcU-Xs-9o5"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lff-Hz-DB2">
                                                                 <rect key="frame" x="244" y="0.0" width="122" height="50"/>
                                                                 <state key="normal" title="monkey" image="monkey"/>
+                                                                <connections>
+                                                                    <action selector="monkeyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fhq-ZY-yYi"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -81,14 +108,23 @@
                                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G83-cN-L0Q">
                                                                 <rect key="frame" x="0.0" y="0.0" width="122" height="50"/>
                                                                 <state key="normal" title="rooster" image="rooster"/>
+                                                                <connections>
+                                                                    <action selector="roosterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rd6-dg-f6T"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9b7-Vp-WBc">
                                                                 <rect key="frame" x="122" y="0.0" width="122" height="50"/>
                                                                 <state key="normal" title="dog" image="dog"/>
+                                                                <connections>
+                                                                    <action selector="dogButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YSR-Nh-JOA"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4P-UD-5MR">
                                                                 <rect key="frame" x="244" y="0.0" width="122" height="50"/>
                                                                 <state key="normal" title="swine" image="swine"/>
+                                                                <connections>
+                                                                    <action selector="swineButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGa-1n-sAs"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -96,7 +132,6 @@
                                                         <rect key="frame" x="0.0" y="708" width="366" height="50"/>
                                                         <state key="normal" title="Discover your sign here"/>
                                                         <connections>
-                                                            <action selector="didTapInDiscoverYourSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="haQ-yd-pZk"/>
                                                             <segue destination="jmF-fr-Ulu" kind="presentation" identifier="toDatePicker" id="LLB-75-qwk"/>
                                                         </connections>
                                                     </button>
