@@ -13,14 +13,14 @@ class HoroscopeViewController: UIViewController {
     static let horoscopeVCSegueIdentifier = "toHoroscope"
     var horoscopereceived = Horoscope.init(dateStart: Date.init(), dateEnd: Date.init(), symbol: .tiger)
     
-    @IBOutlet var imageHoroscopeReceived: UIView!
+    
+    @IBOutlet weak var imageHoroscopeReceived: UIImageView!
     @IBOutlet var descriptionHoroscopeReceived: UILabel!
     @IBOutlet var affinityHoroscopeReceived: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageHoroscopeReceived.accessibilityIdentifier = horoscopereceived.animalSymbol.asString
-        print(horoscopereceived.animalSymbol.asString)
+        imageHoroscopeReceived.image = UIImage(named: horoscopereceived.animalSymbol.asString)
         descriptionHoroscopeReceived.text = horoscopereceived.animalSymbol.message
         affinityHoroscopeReceived.text = horoscopereceived.animalSymbol.compatibility
     }

@@ -265,7 +265,7 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="J1S-p2-O2P" secondAttribute="trailing" symbolic="YES" id="D4R-xo-DqE"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="J1S-p2-O2P" secondAttribute="trailing" constant="20" symbolic="YES" id="D4R-xo-DqE"/>
                                             <constraint firstItem="l2N-am-wME" firstAttribute="leading" secondItem="ydW-aZ-qz7" secondAttribute="leading" constant="16" id="KHB-fi-FyN"/>
                                             <constraint firstItem="J1S-p2-O2P" firstAttribute="leading" secondItem="ydW-aZ-qz7" secondAttribute="leading" constant="16" id="NFw-A0-S4g"/>
                                             <constraint firstAttribute="trailing" secondItem="l2N-am-wME" secondAttribute="trailing" constant="16" id="Obg-5v-DcG"/>
@@ -311,7 +311,7 @@
                     <connections>
                         <outlet property="affinityHoroscopeReceived" destination="eLT-IH-B9E" id="hvi-MT-aZX"/>
                         <outlet property="descriptionHoroscopeReceived" destination="J1S-p2-O2P" id="Ouz-5g-MUl"/>
-                        <outlet property="imageHoroscopeReceived" destination="ydW-aZ-qz7" id="8ca-po-4QX"/>
+                        <outlet property="imageHoroscopeReceived" destination="l2N-am-wME" id="zMP-RM-gal"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2F-2M-mib" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
