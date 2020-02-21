@@ -247,7 +247,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydW-aZ-qz7" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="606"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l2N-am-wME">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="l2N-am-wME">
                                                 <rect key="frame" x="16" y="16" width="382" height="148"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="l2N-am-wME" secondAttribute="height" multiplier="191:74" id="8fm-hA-7sA"/>

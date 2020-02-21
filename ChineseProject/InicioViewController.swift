@@ -10,8 +10,8 @@ import UIKit
 
 class InicioViewController: UIViewController{
     
-    var datePicker = Date.init()
-    var horoscopesArrayDates: [Horoscope] = []
+   
+    
     var horoscopeSender = Horoscope.init(dateStart: Date.init(), dateEnd: Date.init(), symbol: .tiger)
     
     
@@ -27,11 +27,9 @@ class InicioViewController: UIViewController{
     @IBAction func rabbitButton(_ sender: UIButton) {
         segueInteraction(symbol: .rabbit)
     }
-    
     @IBAction func dragonButton(_ sender: UIButton) {
         segueInteraction(symbol: .dragon)
     }
-    
     @IBAction func snakeButton(_ sender: UIButton) {
         segueInteraction(symbol: .snake)
     }
@@ -54,14 +52,13 @@ class InicioViewController: UIViewController{
         segueInteraction(symbol: .swine)
     }
     
-    func segueInteraction (symbol: Horoscope.Symbol){
-        horoscopeSender.animalSymbol = symbol
-        performSegue(withIdentifier: HoroscopeViewController.horoscopeVCSegueIdentifier, sender: nil)
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    
     @IBAction func unwindToIntroduction(unwindSegue: UIStoryboardSegue) {
         let control = DatePickerViewController()
         control.delegate = self
@@ -74,12 +71,21 @@ class InicioViewController: UIViewController{
             let vc = segue.destination as! HoroscopeViewController
             vc.horoscopereceived = horoscopeSender
         }
-    }   
+    }
+    func segueInteraction (symbol: Horoscope.Symbol){
+        horoscopeSender.animalSymbol = symbol
+        performSegue(withIdentifier: HoroscopeViewController.horoscopeVCSegueIdentifier, sender: nil)
+    }
 }
+
+
 extension InicioViewController: DatePickerDelegate {
     func datePickerValue(date: Date) {
-        datePicker = date
-        //performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
+        if horoscopeSender.typeForDate(date:date) != nil {
+            horoscopeSender.animalSymbol = horoscopeSender.typeForDate(date:date)!
+        segueInteraction(symbol: horoscopeSender.animalSymbol)
+        }
+        
     }
 }
 

@@ -21,11 +21,8 @@ class DatePickerViewController: UIViewController  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
+    }    
     override func viewWillDisappear(_ animated: Bool) {
         delegate?.datePickerValue(date: datePicker.date)
     }
-    
-    
 }
