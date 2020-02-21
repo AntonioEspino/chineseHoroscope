@@ -123,15 +123,6 @@ struct Horoscope {
         self.dateEnd = dateEnd
         self.animalSymbol = symbol
     }
-    func isDateIncluded (date: Date) -> Bool{
-        let isIncluded: Bool
-        if (date >= dateStart && date <= dateEnd ){
-            isIncluded = true
-        } else {
-            isIncluded = false
-        }
-        return isIncluded
-    }
     func typeForDate (date: Date) -> Symbol?{
         
         let dateAsString = date.description
