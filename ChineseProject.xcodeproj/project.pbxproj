@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7151F10E23FF3AE400EF236B /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151F10D23FF3AE400EF236B /* Horoscope.swift */; };
+		7151F11023FF56E600EF236B /* HoroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151F10F23FF56E600EF236B /* HoroscopeViewController.swift */; };
 		716D487323FF129F00471D59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716D487223FF129F00471D59 /* AppDelegate.swift */; };
 		716D487523FF129F00471D59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716D487423FF129F00471D59 /* SceneDelegate.swift */; };
 		716D487723FF129F00471D59 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716D487623FF129F00471D59 /* InicioViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		7151F10D23FF3AE400EF236B /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
+		7151F10F23FF56E600EF236B /* HoroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeViewController.swift; sourceTree = "<group>"; };
 		716D486F23FF129F00471D59 /* ChineseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChineseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		716D487223FF129F00471D59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		716D487423FF129F00471D59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				716D487223FF129F00471D59 /* AppDelegate.swift */,
 				716D487423FF129F00471D59 /* SceneDelegate.swift */,
 				716D487623FF129F00471D59 /* InicioViewController.swift */,
+				7151F10F23FF56E600EF236B /* HoroscopeViewController.swift */,
 				7151F10D23FF3AE400EF236B /* Horoscope.swift */,
 				716D488623FF145300471D59 /* DatePickerViewController.swift */,
 				716D487823FF129F00471D59 /* Main.storyboard */,
@@ -147,6 +150,7 @@
 				716D488723FF145300471D59 /* DatePickerViewController.swift in Sources */,
 				716D487723FF129F00471D59 /* InicioViewController.swift in Sources */,
 				716D487323FF129F00471D59 /* AppDelegate.swift in Sources */,
+				7151F11023FF56E600EF236B /* HoroscopeViewController.swift in Sources */,
 				7151F10E23FF3AE400EF236B /* Horoscope.swift in Sources */,
 				716D487523FF129F00471D59 /* SceneDelegate.swift in Sources */,
 			);

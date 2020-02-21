@@ -11,6 +11,8 @@ import UIKit
 class InicioViewController: UIViewController{
     
     var datePicker = Date.init()
+    var horoscopesArrayDates: [Horoscope] = []
+    
     @IBAction func didTapInDiscoverYourSign(_ sender: UIButton) {
     }
     
@@ -27,6 +29,8 @@ class InicioViewController: UIViewController{
         if segue.identifier == "toDatePicker" {
             let vc = segue.destination as! DatePickerViewController
             vc.delegate = self
+        }else if segue.identifier == "toHoroscope" {
+           // let vc = segue.destination as! ho
         }
     }
     

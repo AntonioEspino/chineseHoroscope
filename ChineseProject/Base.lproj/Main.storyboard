@@ -198,10 +198,10 @@
             </objects>
             <point key="canvasLocation" x="2180" y="575"/>
         </scene>
-        <!--View Controller-->
+        <!--Horoscope View Controller-->
         <scene sceneID="7hl-Ki-4Qz">
             <objects>
-                <viewController id="V8b-OL-71G" sceneMemberID="viewController">
+                <viewController id="V8b-OL-71G" customClass="HoroscopeViewController" customModule="ChineseProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tjE-jt-55j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -227,7 +227,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLT-IH-B9E" userLabel="Comparation">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLT-IH-B9E" userLabel="Affinity">
                                                 <rect key="frame" x="16" y="393" width="382" height="197"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="eLT-IH-B9E" secondAttribute="height" multiplier="382:197" id="YXI-Iq-Juf"/>
@@ -273,6 +273,11 @@
                         <viewLayoutGuide key="safeArea" id="SD1-kE-ioc"/>
                     </view>
                     <navigationItem key="navigationItem" id="2En-nl-NZi"/>
+                    <connections>
+                        <outlet property="affinityHoroscopeReceived" destination="eLT-IH-B9E" id="hvi-MT-aZX"/>
+                        <outlet property="descriptionHoroscopeReceived" destination="J1S-p2-O2P" id="Ouz-5g-MUl"/>
+                        <outlet property="imageHoroscopeReceived" destination="ydW-aZ-qz7" id="8ca-po-4QX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2F-2M-mib" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
